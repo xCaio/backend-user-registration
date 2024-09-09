@@ -12,7 +12,7 @@ app.use(route)
 
 connectDatabase()
 .then(() =>{
-    app.listen(3000, () => console.log("Servidor iniciado em: http://localhost:3000\nMongoDB Connected 🚀")) 
+    app.listen(port, () => console.log("Servidor iniciado em: http://localhost:3000\nMongoDB Connected 🚀")) 
 })
 .catch((error) => console.log(`ERRO: ${error}`))
 
